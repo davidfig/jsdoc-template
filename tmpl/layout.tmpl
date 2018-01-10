@@ -28,7 +28,7 @@
     <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
     <link type="text/css" rel="stylesheet" href="styles/bootstrap.min.css">
     <link type="text/css" rel="stylesheet" href="styles/main.css">
-    
+
     <?js if (env.conf.templates) { ?>
     <script>
     var config = <?js= JSON.stringify(env.conf.templates) ?>;
@@ -40,7 +40,7 @@
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', config.googleAnalytics]);
       _gaq.push(['_trackPageview']);
-    
+
       (function() {
         var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
@@ -53,7 +53,11 @@
 <div id="wrap" class="clearfix">
     <?js= this.partial('navigation.tmpl', this) ?>
     <div class="main">
+        <?js if (env.conf.readmeShowNav) { ?>
+        <h1 class="page-title" data-filename="<?js= env.conf.readmeShowNav ?>"><?js= title ?></h1>
+        <?js } else { ?>
         <h1 class="page-title" data-filename="<?js= filename ?>"><?js= title ?></h1>
+        <?js } ?>
         <?js= content ?>
 
         <?js if (env.conf.templates.disqus) { ?>
