@@ -1,7 +1,7 @@
 {
-  "name": "@davidfig/jsdoc-template",
+  "name": "yy-jsdoc-template",
   "version": "1.0.0",
-  "description": "YOPEY YOPEY LLC template for JSDoc 3",
+  "description": "YOPEY YOPEY LLC template for JSDoc 3 ased on @pixijs/jsdoc-template",
   "dependencies": {
     "taffydb": "^2.7.2",
     "underscore": "^1.7.0"
@@ -29,7 +29,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/davidfig/yy-jsdoc-template.git"
+    "url": "git://github.com/davidfig/jsdoc-template.git"
   },
   "keywords": [
     "jsdoc",
@@ -46,6 +46,6 @@
   "license": "MIT",
   "readmeFilename": "README.md",
   "bugs": {
-    "url": "https://github.com/davidfig/yy-jsdoc-template/issues"
+    "url": "https://github.com/davidfig/jsdoc-template/issues"
   }
 }
